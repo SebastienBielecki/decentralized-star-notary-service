@@ -1,6 +1,13 @@
+ERC-721 token name: "Seb Stars"
+<br>
+ERC-721 token symbol: "STAR"
+<br>
 truffle version: v5.6.1 (core: 5.6.1)
+<br>
 openzeppelin version: "openzeppelin-solidity": "2.3"
-
+<br>
+deployed address on Goeli: 0xa4620DF15795C4195fFB485dfD83b5E44EcEc5Ea
+<br>
 
 
 # ND1309 C2 Ethereum Smart Contracts, Tokens and Dapps - Project Starter 
