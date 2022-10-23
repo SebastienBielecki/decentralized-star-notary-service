@@ -35,7 +35,7 @@
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "pragma solidity ^0.5.0;\n\nimport \"./IERC165.sol\";\n\n/**\n * @dev Implementation of the `IERC165` interface.\n *\n * Contracts may inherit from this and call `_registerInterface` to declare\n * their support of an interface.\n */\ncontract ERC165 is IERC165 {\n    /*\n     * bytes4(keccak256('supportsInterface(bytes4)')) == 0x01ffc9a7\n     */\n    bytes4 private constant _INTERFACE_ID_ERC165 = 0x01ffc9a7;\n\n    /**\n     * @dev Mapping of interface ids to whether or not it's supported.\n     */\n    mapping(bytes4 => bool) private _supportedInterfaces;\n\n    constructor () internal {\n        // Derived contracts need only register support for their own interfaces,\n        // we register support for ERC165 itself here\n        _registerInterface(_INTERFACE_ID_ERC165);\n    }\n\n    /**\n     * @dev See `IERC165.supportsInterface`.\n     *\n     * Time complexity O(1), guaranteed to always use less than 30 000 gas.\n     */\n    function supportsInterface(bytes4 interfaceId) external view returns (bool) {\n        return _supportedInterfaces[interfaceId];\n    }\n\n    /**\n     * @dev Registers the contract as an implementer of the interface defined by\n     * `interfaceId`. Support of the actual ERC165 interface is automatic and\n     * registering its interface id is not required.\n     *\n     * See `IERC165.supportsInterface`.\n     *\n     * Requirements:\n     *\n     * - `interfaceId` cannot be the ERC165 invalid interface (`0xffffffff`).\n     */\n    function _registerInterface(bytes4 interfaceId) internal {\n        require(interfaceId != 0xffffffff, \"ERC165: invalid interface id\");\n        _supportedInterfaces[interfaceId] = true;\n    }\n}\n",
-  "sourcePath": "/Users/sebastienbielecki/Documents/2. Seb/6. Formation/16. Udacity blockchain/2.Ethereum smart contracts, tokens and dapps/2.4.Project/app/node_modules/openzeppelin-solidity/contracts/introspection/ERC165.sol",
+  "sourcePath": "/Users/sebastienbielecki/Documents/2. Seb/6. Formation/16. Udacity blockchain/2.Ethereum smart contracts, tokens and dapps/2.4.Decentralized Star Notary Service Project/app/node_modules/openzeppelin-solidity/contracts/introspection/ERC165.sol",
   "ast": {
     "absolutePath": "project:/app/node_modules/openzeppelin-solidity/contracts/introspection/ERC165.sol",
     "exportedSymbols": {
@@ -505,10 +505,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1197,
-                        1198
+                        1292,
+                        1293
                       ],
-                      "referencedDeclaration": 1198,
+                      "referencedDeclaration": 1293,
                       "src": "1509:7:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -1183,10 +1183,10 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                1197,
-                                1198
+                                1292,
+                                1293
                               ],
-                              "referencedDeclaration": 1198,
+                              "referencedDeclaration": 1293,
                               "type": "function (bool,string memory) pure",
                               "value": "require"
                             },
@@ -1381,7 +1381,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.10",
-  "updatedAt": "2022-10-21T20:05:07.755Z",
+  "updatedAt": "2022-10-23T12:37:30.588Z",
   "devdoc": {
     "details": "Implementation of the `IERC165` interface. * Contracts may inherit from this and call `_registerInterface` to declare their support of an interface.",
     "methods": {
