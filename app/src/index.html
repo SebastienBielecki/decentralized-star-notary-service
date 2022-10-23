@@ -1,17 +1,53 @@
 <!DOCTYPE html>
 <html>
+  
   <head>
     <title>StarNotary DAPP</title>
+    
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
   </head>
   <style>
     input {
       display: block;
       margin-bottom: 12px;
     }
+
+    .background {
+      background-image: url(https://images.unsplash.com/photo-1599045151332-ff2587f03eb2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .app-title {
+      margin-top: 50px;
+    }
+
+    
+    h1 {
+      color: white;
+    }
+
+    label {
+      color: white;
+    }
+
+    #status {
+      color: white;
+    }
+
+    hr {
+      color: white;
+    }
+
   </style>
-  <body>
-    <h1>StarNotary Token DAPP</h1>
+  
+  <body class="background">
+    
+    <h1 class="app-title">StarNotary Token DAPP</h1>
 
     <hr>
 
@@ -19,17 +55,19 @@
       <h1>Create a Star</h1>
       <br><label for="starName">Star Name:</label><input type="text" id="starName"></input>
       <br><label for="starId">Star ID:</label><input type="text" id="starId"></input>
-      <br><br><button id="createStar" onclick="App.createStar()">Create Star</button>
+      <br><br><button class="btn btn-primary" id="createStar" onclick="App.createStar()">Create Star</button>
       <br>
       <hr>
       <br>
       <h1>Look up a Star</h1>
       <br><label for="name">Star ID:</label><input type="text" id="lookid"></input>
-      <br><br><button onclick="App.lookUp()">Look Up a Star</button>
+      <br><br><button class="btn btn-primary" onclick="App.lookUp()">Look Up a Star</button>
       <hr>
       <br>
       <span id="status"></span>
       <br>
     <script src="index.js"></script>
+  
+  
   </body>
 </html>
