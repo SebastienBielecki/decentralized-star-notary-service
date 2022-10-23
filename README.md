@@ -6,7 +6,7 @@ truffle version: v5.6.1 (core: 5.6.1)
 <br>
 openzeppelin version: "openzeppelin-solidity": "2.3"
 <br>
-deployed address on Goeli: 0xa4620DF15795C4195fFB485dfD83b5E44EcEc5Ea
+deployed address on Goerli: 0xa4620DF15795C4195fFB485dfD83b5E44EcEc5Ea
 <br>
 
 
